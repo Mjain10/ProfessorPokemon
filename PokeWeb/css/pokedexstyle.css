@@ -1,0 +1,148 @@
+#bg {
+    background-image: url(../images/pokemon_home_background.png);
+    background-repeat: no-repeat;
+}
+
+
+nav {
+    text-align: center;
+    background-color: azure;
+    font-family: 'Pokemon Solid';
+    font-size: 15px;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+
+nav > ul > li > a {
+    color: #3c5aa6;
+    background-color: azure;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+
+.container {
+    margin-top: 50px;
+    margin-left: 150px;
+    display: inline-block;
+    float:left;
+    margin-right: inherit;
+}
+
+
+h4 {
+    text-align: center;
+    font-family: 'Pokemon Solid';
+    font-size: 50px;
+    color: #3c5aa6;
+    text-shadow: -1px 0 #c7a008,0 5px #c7a008, 5px 0 #c7a008,0 -1px #c7a008;
+    margin-top: -30px;
+}
+
+
+
+.info_box {
+    margin-top: 50px;
+    margin-right: 150px;
+    margin-left: 100px;
+    height: 375px;
+    width: 1100px;
+    background-color: azure;
+    display: inline-block;
+    float:left;
+    margin-right: inherit;
+}
+
+.search {
+    margin-left: 375px;
+    margin-right: 300px;
+    margin-top: 20px;
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+}
+
+
+.btn {
+    font-family: 'Pokemon Solid';
+    background-color: #3c5aa6;
+    text-align: center;
+    font-size: 15px;
+    color: #3c5aa6;
+    text-shadow: -1px 0 #c7a008,0 2px #c7a008, 2px 0 #c7a008,0 -1px #c7a008;
+    border-style: solid;
+    border-radius: 6px;
+    width: 15%;
+}
+
+
+.search>input[type=text] {
+    display: flex;
+    padding: 0.6em;
+    border: 2px #3c5aa6;
+    border-radius: 6px;
+    border-style: solid;
+}
+
+
+.search>input[type=text] .search>button{
+    display: block;
+    font:1.2em;
+}
+
+
+.data_box {
+    height: 290px;
+    width: 1100px;
+    background-color: aliceblue;
+    border-style: hidden;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-right: 250px;
+    
+}
+
+#base_info {
+    float: left;
+    font-family: 'Pokemon Solid';
+    margin-right: 10px;
+}
+
+
+#info {
+    float: left;
+    font-family: 'Pokemon Solid';
+    font-size: 17px;
+    list-style-type: none;
+}
+
+.info_container {
+    float: left;
+    overflow: scroll;
+    height: 290px;
+    width: 600px;
+    margin-left: 30px;
+}
+
+
+.title {
+    color: #3c5aa6;
+    text-shadow: -1px 0 #c7a008,0 2px #c7a008, 2px 0 #c7a008,0 -1px #c7a008;
+    font-family: 'Pokemon Solid';
+    font-size: 30px;
+    margin-right: 0;
+    float: left;
+}
