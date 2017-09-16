@@ -35,9 +35,9 @@ function gameSubmit() {
             var splitReleaseGroup = releaseGroup.split('-');
             var formatReleaseGroup;
             
-            if (releaseGroup.match(/-/g).length === 1){
+            if (releaseGroup.match(/-/g) !== null && releaseGroup.match(/-/g).length === 1){
                 formatReleaseGroup = splitReleaseGroup[0][0].toUpperCase() + splitReleaseGroup[0].slice(1) + ' and ' + splitReleaseGroup[1][0].toUpperCase() + splitReleaseGroup[1].slice(1);
-            } else if (releaseGroup.match(/-/g).length === 3){
+            } else if (releaseGroup.match(/-/g) !== null && releaseGroup.match(/-/g).length === 3){
                 formatReleaseGroup = splitReleaseGroup[0][0].toUpperCase() + splitReleaseGroup[0].slice(1) + ' ' + splitReleaseGroup[1][0].toUpperCase() + splitReleaseGroup[1].slice(1) + ' and ' + splitReleaseGroup[2][0].toUpperCase() + splitReleaseGroup[2].slice(1) + ' ' + splitReleaseGroup[3][0].toUpperCase() + splitReleaseGroup[3].slice(1);
             } else {
                 formatReleaseGroup = releaseGroup[0].toUpperCase() + releaseGroup.slice(1);
