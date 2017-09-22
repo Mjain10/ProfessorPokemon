@@ -37,5 +37,5 @@ app.get('/locations.html', function(req, res) {
 });
 
 app.listen(8080, function () {
-  console.log('Server running on localhost:8080')
+  console.log('Server running on localhost:8080/home.html')
 })
