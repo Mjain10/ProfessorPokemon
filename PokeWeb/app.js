@@ -1,8 +1,17 @@
 var express = require('express')
 var app = express()
 var path = require('path')
+var cors = require('cors')
 
 app.use(express.static('public'));
+app.use(cors())
+
+app.all("*", function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Cache-Control, Pragma, Origin, Authorization, Content-Type, X-Requested-With");
+  res.header("Access-Control-Allow-Methods", "GET, PUT, POST");
+  return next();
+});
 
 app.get('/home.html', function(req, res) {
     res.sendFile(path.resolve('../public/home.html'))
