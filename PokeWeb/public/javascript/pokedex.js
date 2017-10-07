@@ -7,7 +7,7 @@ function pokeSubmit() {
     event.preventDefault();
     
     var param = document.getElementById('dex').value.toLowerCase();
-    var dexURL = 'http://pokeapi.co/api/v2/pokemon/' + param;
+    var dexURL = 'http://pokeapi.salestock.net/api/v2/pokemon/' + param;
     
     $.getJSON(dexURL, function(data) {
         
