@@ -7,7 +7,7 @@ function contestSubmit() {
     event.preventDefault();
     
     var param = document.getElementById('contest').value.toLowerCase();
-    var contestURL = 'http://pokeapi.co/api/v2/contest-type/' + param;
+    var contestURL = 'http://pokeapi.salestock.net/api/v2/contest-type/' + param;
     
     $.getJSON(contestURL, function(data) {
         
@@ -15,7 +15,7 @@ function contestSubmit() {
         var berryFlavor = data.berry_flavor.name;
         var color = data.names[0].color;
         var id = data.id;
-        var contestEffectURL = 'http://pokeapi.co/api/v2/contest-effect/' + id;
+        var contestEffectURL = 'http://pokeapi.salestock.net/api/v2/contest-effect/' + id;
         
         
         $.getJSON(contestEffectURL, function(data2) {
@@ -23,7 +23,7 @@ function contestSubmit() {
             var appeal = data2.appeal;
             var jam = data2.jam;
             var effectEntry = data2.effect_entries[0].effect;
-            var superContestEffectURL = 'http://pokeapi.co/api/v2/super-contest-effect/' + id;
+            var superContestEffectURL = 'http://pokeapi.salestock.net/api/v2/super-contest-effect/' + id;
             
             $.getJSON(superContestEffectURL, function(data3) {
                 
