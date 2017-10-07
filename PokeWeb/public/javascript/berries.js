@@ -6,8 +6,8 @@ function berrySubmit() {
     "use strict";
     event.preventDefault();
     var param = document.getElementById('berry').value.toLowerCase();
-    var berryURL = 'http://pokeapi.co/api/v2/berry/' + param;
-    var spriteURL = 'http://pokeapi.co/api/v2/item/' + param + '-berry';
+    var berryURL = 'http://pokeapi.salestock.net/api/v2/berry/' + param;
+    var spriteURL = 'http://pokeapi.salestock.net/api/v2/item/' + param + '-berry';
     
     $.getJSON(berryURL, function (data) {
         
