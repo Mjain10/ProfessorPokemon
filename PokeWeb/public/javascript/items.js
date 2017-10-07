@@ -13,7 +13,7 @@ function itemSubmit() {
         param = checkParam[0] + '-' + checkParam[1];
     }
     
-    var itemURL = 'http://pokeapi.co/api/v2/item/' + param;
+    var itemURL = 'http://pokeapi.salestock.net/api/v2/item/' + param;
     
     
     $.getJSON(itemURL, function(data) {
