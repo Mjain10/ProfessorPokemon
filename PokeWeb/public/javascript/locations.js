@@ -7,7 +7,7 @@ function locationSubmit() {
     event.preventDefault();
     
     var param = document.getElementById('location').value.toLowerCase();
-    var regionURL = 'http://pokeapi.co/api/v2/region/' + param;
+    var regionURL = 'http://pokeapi.salestock.net/api/v2/region/' + param;
     
     $.getJSON(regionURL, function(data) {
         
