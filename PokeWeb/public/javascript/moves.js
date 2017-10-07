@@ -13,7 +13,7 @@ function moveSubmit() {
         param = checkParam[0] + '-' + checkParam[1];
     }
     
-    var moveURL = 'http://pokeapi.co/api/v2/move/' + param;
+    var moveURL = 'http://pokeapi.salestock.net/api/v2/move/' + param;
     
     $.getJSON(moveURL, function(data) {
         
