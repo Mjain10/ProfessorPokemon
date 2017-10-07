@@ -13,14 +13,14 @@ function gameSubmit() {
         param = checkParam[0] + '-' + checkParam[1];
     }
     
-    var gameURL = 'http://pokeapi.co/api/v2/version/' + param;
+    var gameURL = 'http://pokeapi.salestock.net/api/v2/version/' + param;
     
     
     $.getJSON(gameURL, function(data) {
         
         var name = "Pokémon " + data.names[4].name;
         var releaseGroup = data.version_group.name;
-        var versionGroupURL = 'http://pokeapi.co/api/v2/version-group/' + releaseGroup;
+        var versionGroupURL = 'http://pokeapi.salestock.net/api/v2/version-group/' + releaseGroup;
         
         $.getJSON(versionGroupURL, function(data2) {
             
